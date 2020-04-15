@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react"
 
-import { Container, Content } from './styles';
+import { Container, Content } from "./styles"
+import PropTypes from "prop-types"
 
-export default function Card() {
+function Card({ title, description }) {
   return (
     <Container>
       <Content>
-        <h4>Curso 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
-          odio?
-        </p>
+        <h4>{title}</h4>
+        <p>{description}</p>
       </Content>
     </Container>
-  );
+  )
 }
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
+export default Card

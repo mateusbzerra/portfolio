@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.header`
-  background-image: url('/images/header-background.png');
+  background-image: url("/images/header-background.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -9,14 +9,14 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   align-items: center;
   justify-content: space-between;
   margin: 0px auto;
@@ -39,4 +39,4 @@ export const Content = styled.div`
       padding-left: 10px;
     }
   }
-`;
+`

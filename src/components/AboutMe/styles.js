@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.section`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0px auto;
-`;
+  padding: 0px 30px;
+`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -18,13 +19,13 @@ export const Wrapper = styled.div`
     height: 100%;
     margin-left: -20px;
   }
-`;
+`
 export const Content = styled.div`
   background: ${({ theme }) => theme.blue};
   display: flex;
   width: 90%;
   border-radius: 20px;
-`;
+`
 export const Card = styled.div`
   background: ${({ theme }) => theme.foreground};
   margin-left: 15px;
@@ -39,10 +40,10 @@ export const Card = styled.div`
   padding: 20px;
   color: #fff;
   box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.5);
-`;
+`
 export const CardContent = styled.div`
   margin-right: 50px;
-  padding: 20px 50px;
+  padding: 20px;
   h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -54,11 +55,11 @@ export const CardContent = styled.div`
     font-size: 15px;
     font-weight: 100;
   }
-`;
+`
 export const CardList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 20px;
   padding-bottom: 20px;
-`;
+`

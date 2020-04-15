@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import {
   Container,
   Content,
@@ -7,45 +7,53 @@ import {
   Card,
   CardContent,
   CardList,
-} from './styles';
-import CardComponent from '../Card';
+} from "./styles"
+import CardComponent from "../Card"
 
 export default function AboutMe() {
+  const { getAbout, getEducation } = useStaticQuery(graphql`
+    query GetAbout {
+      getAbout: allContentJson(filter: { type: { eq: "about" } }) {
+        nodes {
+          title
+          description
+        }
+      }
+      getEducation: allContentJson(filter: { type: { eq: "education" } }) {
+        nodes {
+          courses {
+            title
+            description
+          }
+        }
+      }
+    }
+  `)
+
+  const aboutData = getAbout.nodes[0]
+  const educationData = getEducation.nodes[0]
   return (
     <Container>
       <Wrapper>
         <Content>
           <Card>
             <CardContent>
-              <h1>Sobre Mim</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                neque optio odio? Sint corrupti sed, pariatur est inventore
-                alias culpa accusamus nostrum temporibus aut. Asperiores
-                deleniti molestiae ducimus, ad consequatur beatae corrupti
-                accusamus dolores maxime, quos, sequi amet laborum quisquam
-                possimus animi et omnis tempore! Officia modi quibusdam natus
-                qui odit cum animi, aliquam deserunt fuga tempore? Error, itaque
-                impedit? Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Eius, autem! Impedit placeat veniam deserunt id reiciendis
-                recusandae saepe, est eaque quisquam tempora esse, voluptate
-                sequi at odio iste labore ullam. Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Vel tempore similique iste
-                assumenda praesentium ex quas explicabo totam temporibus id
-                delectus aperiam eos, sunt iusto optio? Iusto debitis quaerat
-                vel.
-              </p>
+              <h1>{aboutData.title}</h1>
+              <p>{aboutData.description}</p>
             </CardContent>
           </Card>
         </Content>
-        <img src='/images/profile.png' alt='profile-image' />
+        <img src="/images/profile.png" alt="profile-image" />
       </Wrapper>
       <CardList>
-        <CardComponent></CardComponent>
-        <CardComponent></CardComponent>
-        <CardComponent></CardComponent>
-        <CardComponent></CardComponent>
+        {educationData.courses.map(({ title, description }) => (
+          <CardComponent
+            key={title}
+            title={title}
+            description={description}
+          ></CardComponent>
+        ))}
       </CardList>
     </Container>
-  );
+  )
 }

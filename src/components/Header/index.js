@@ -1,20 +1,28 @@
 import React from "react"
-
+import { useStaticQuery, graphql } from "gatsby"
 import { Container, Content } from "./styles"
 
 export default function Header() {
+  const { allContentJson } = useStaticQuery(graphql`
+    query GetHeader {
+      allContentJson(filter: { type: { eq: "header" } }) {
+        nodes {
+          id
+          type
+          title
+          description
+        }
+      }
+    }
+  `)
+  const headerData = allContentJson.nodes[0]
+
   return (
     <Container>
       <Content>
         <div className="left">
-          <h1>Desenvolvimento de Software</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-            qui reprehenderit ad recusandae ex voluptatibus neque iste vitae
-            rerum. Doloribus laboriosam, vero expedita odio, architecto eligendi
-            numquam sed magnam quisquam molestias consequatur libero, sit
-            officiis placeat nulla et dolor ipsa!
-          </p>
+          <h1>{headerData.title}</h1>
+          <p>{headerData.description}</p>
         </div>
         <div className="right">
           <img src="/images/header-image.png" alt="image" />

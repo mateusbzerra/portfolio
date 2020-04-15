@@ -1,0 +1,9 @@
+{
+  "type": "education",
+  "courses": [
+    {
+      "title": "Bootcamp Rocketseat",
+      "description": "Um pequeno texto para descrever um pouco sobre o bootcamp"
+    }
+  ]
+}
