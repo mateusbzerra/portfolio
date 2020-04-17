@@ -25,7 +25,7 @@ export default function Header() {
           <p>{headerData.description}</p>
         </div>
         <div className="right">
-          <img src="/images/header-image.png" alt="image" />
+          <img src="/images/header-image.png" alt="tablet" />
         </div>
       </Content>
     </Container>

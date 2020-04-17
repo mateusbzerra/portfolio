@@ -19,4 +19,11 @@ body{
 html,#___gatsby,#gatsby-focus-wrapper,body{
   height:100%;
 }
+h1.title{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5vh;
+  font-size: 40px;
+}
 `

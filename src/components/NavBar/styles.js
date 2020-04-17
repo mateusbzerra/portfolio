@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   height: 80px;
   background: ${({ theme }) => theme.foreground};
-`;
+`
 
 export const Content = styled.div`
   width: 100%;
@@ -23,4 +23,4 @@ export const Content = styled.div`
   strong {
     display: block;
   }
-`;
+`

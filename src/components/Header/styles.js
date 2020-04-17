@@ -18,12 +18,18 @@ export const Content = styled.div`
   height: 100%;
   max-width: 1100px;
   align-items: center;
-  justify-content: space-between;
   margin: 0px auto;
   flex-direction: row;
   padding: 0px 15px;
   color: ${({ theme }) => theme.white};
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
   .left {
+    @media only screen and (max-width: 900px) {
+      text-align: center;
+      padding-bottom: 10px;
+    }
     h1 {
       margin-bottom: 20px;
     }
@@ -34,9 +40,17 @@ export const Content = styled.div`
     }
   }
   .right {
+    display: flex;
+
     img {
+      margin: 0px auto;
       max-width: 100%;
       padding-left: 10px;
+    }
+    @media only screen and (max-width: 900px) {
+      img {
+        max-height: 300px;
+      }
     }
   }
 `
