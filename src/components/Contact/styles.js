@@ -5,6 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
+  padding-top: 10vh;
 `
 export const List = styled.div`
   display: grid;
