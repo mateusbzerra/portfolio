@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container, Content, Card, CardContent } from "./styles"
+import { Container, Wrapper, Content, Card, CardContent } from "./styles"
 
 export default function AboutMe() {
   const { getAbout } = useStaticQuery(graphql`
@@ -17,15 +17,17 @@ export default function AboutMe() {
   const aboutData = getAbout.nodes[0]
   return (
     <Container>
-      <Content>
-        <Card>
-          <CardContent>
-            <h1>{aboutData.title}</h1>
-            <p>{aboutData.description}</p>
-          </CardContent>
-        </Card>
-      </Content>
-      <img src="/images/profile.png" alt="profile" />
+      <h1 className="title">Sobre mim</h1>
+      <Wrapper>
+        <Content>
+          <Card>
+            <CardContent>
+              <p>{aboutData.description}</p>
+            </CardContent>
+          </Card>
+        </Content>
+        <img src="/images/profile.png" alt="profile" />
+      </Wrapper>
     </Container>
   )
 }

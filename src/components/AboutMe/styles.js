@@ -1,8 +1,12 @@
 import styled from "styled-components"
-
 export const Container = styled.section`
   display: flex;
+  flex-direction: column;
+`
+export const Wrapper = styled.div`
+  display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 20px 0px;
   flex-direction: row;
@@ -48,12 +52,7 @@ export const CardContent = styled.div`
   padding: 20px;
   @media only screen and (max-width: 800px) {
     margin-right: 0px;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    padding: 10px 0px;
   }
   p {
     line-height: 25px;
