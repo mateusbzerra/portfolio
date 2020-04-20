@@ -33,10 +33,17 @@ export const Content = styled.div`
     h1 {
       margin-bottom: 20px;
     }
+
     p {
       line-height: 22px;
       font-size: 15px;
       max-width: 100%;
+    }
+    @media only screen and (max-width: 900px) {
+      p {
+        line-height: 18px;
+        font-size: 12px;
+      }
     }
   }
   .right {
@@ -49,7 +56,7 @@ export const Content = styled.div`
     }
     @media only screen and (max-width: 900px) {
       img {
-        max-height: 300px;
+        max-height: 25vh;
       }
     }
   }
