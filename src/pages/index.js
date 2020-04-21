@@ -1,4 +1,7 @@
 import React from "react"
+import { ThemeProvider } from "styled-components"
+import GlobalStyle from "../styles/global"
+import theme from "../theme/default"
 import SEO from "../components/seo"
 import NavBar from "../components/NavBar"
 import Header from "../components/Header"
@@ -7,6 +10,7 @@ import Awards from "../components/Awards"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import styled from "styled-components"
+import Portfolio from "../components/Portfolio"
 
 export const Container = styled.div`
   height: 100%;
@@ -19,17 +23,21 @@ export const ContentWrapper = styled.div`
 `
 function Home() {
   return (
-    <Container>
-      <SEO title="Home" />
-      <NavBar></NavBar>
-      <Header></Header>
-      <ContentWrapper>
-        <AboutMe></AboutMe>
-        <Awards></Awards>
-        <Contact></Contact>
-      </ContentWrapper>
-      <Footer></Footer>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle></GlobalStyle>
+      <Container>
+        <SEO />
+        <NavBar></NavBar>
+        <Header></Header>
+        <ContentWrapper>
+          <AboutMe></AboutMe>
+          <Awards></Awards>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
+        </ContentWrapper>
+        <Footer></Footer>
+      </Container>
+    </ThemeProvider>
   )
 }
 

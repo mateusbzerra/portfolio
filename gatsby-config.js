@@ -1,8 +1,8 @@
 const path = require(`path`)
 module.exports = {
   siteMetadata: {
-    title: `Mateus Bezerra`,
-    description: `Desenvolvimento de Sistemas`,
+    title: `Mateus Bezerra - Desenvolvimento de Sistemas`,
+    description: `Desenvolvimento de Sistemas, Websites e Aplicativos Android e iOS`,
     author: `@mateusbzerra`,
   },
   plugins: [
