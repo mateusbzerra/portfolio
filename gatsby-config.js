@@ -4,6 +4,7 @@ module.exports = {
     title: `Mateus Bezerra - Desenvolvimento de Sistemas`,
     description: `Desenvolvimento de Sistemas, Websites e Aplicativos Android e iOS`,
     author: `@mateusbzerra`,
+    siteUrl: "https://mateusbezerra.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -53,6 +54,7 @@ module.exports = {
         path: `./content`,
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
