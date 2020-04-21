@@ -20,6 +20,7 @@ export const Content = styled.div`
   box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.5);
   p {
     font-size: 14px;
+    line-height: 18px;
     padding: 5px;
     color: #bbb;
   }

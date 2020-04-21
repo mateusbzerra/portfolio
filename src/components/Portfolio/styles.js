@@ -48,7 +48,7 @@ export const CardContent = styled.div`
     }
   }
 `
-export const SeeMore = styled.a`
+export const SeeMore = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

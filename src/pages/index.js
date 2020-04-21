@@ -26,7 +26,7 @@ function Home() {
     <ThemeProvider theme={theme}>
       <GlobalStyle></GlobalStyle>
       <Container>
-        <SEO />
+        <SEO title="" />
         <NavBar></NavBar>
         <Header></Header>
         <ContentWrapper>

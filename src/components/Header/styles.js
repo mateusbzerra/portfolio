@@ -43,10 +43,10 @@ export const Content = styled.div`
     strong {
       color: #fff;
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 500px) {
       p {
-        line-height: 20px;
-        font-size: 14px;
+        line-height: 22px;
+        font-size: 15px;
       }
     }
   }
@@ -58,9 +58,14 @@ export const Content = styled.div`
       max-width: 100%;
       padding-left: 10px;
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 800px) {
       img {
-        max-height: 25vh;
+        max-height: 30vh;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      img {
+        max-height: 35vh;
       }
     }
   }

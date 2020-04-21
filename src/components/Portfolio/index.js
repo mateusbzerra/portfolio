@@ -24,7 +24,7 @@ export default function Portfolio() {
       <h1 className="title">Portfolio</h1>
       <List>
         {projectsData.projects.map(item => (
-          <CardWrapper href={item.url} target="__blank" key={item.id}>
+          <CardWrapper href={item.url} target="__blank" key={item.title}>
             <CardContent>
               {item.image ? (
                 <img src={item.image} alt={`${item.title}`} />
