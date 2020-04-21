@@ -38,11 +38,15 @@ export const Content = styled.div`
       line-height: 22px;
       font-size: 15px;
       max-width: 100%;
+      color: #bbb;
+    }
+    strong {
+      color: #fff;
     }
     @media only screen and (max-width: 900px) {
       p {
-        line-height: 18px;
-        font-size: 12px;
+        line-height: 20px;
+        font-size: 14px;
       }
     }
   }

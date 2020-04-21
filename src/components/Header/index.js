@@ -22,7 +22,9 @@ export default function Header() {
       <Content>
         <div className="left">
           <h1>{headerData.title}</h1>
-          <p>{headerData.description}</p>
+          <div
+            dangerouslySetInnerHTML={{ __html: headerData.description }}
+          ></div>
         </div>
         <div className="right">
           <img src="/images/header-image.png" alt="tablet" />
