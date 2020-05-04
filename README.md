@@ -1,4 +1,4 @@
-<h1 align="center">My Portfólio - Mateus Bezerra</h1>
+<h1 align="center">My Portfolio</h1>
 
 <p align="center"> <img width="150" src="static/icon.png" /> </p>
 
