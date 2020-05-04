@@ -20,10 +20,10 @@
       "description": "Aplicativo de controle de fluxo de caixa de uma pequena empresa."
     },
     {
-      "title": "Itaú Clone",
-      "url": "https://github.com/mateusbzerra/itau-app-clone",
+      "title": "Github Explorer",
+      "url": "https://github.com/mateusbzerra/github-explorer",
       "image": "",
-      "description": "Um clone do aplicativo do Banco Itaú, desenvolvido em React Native."
+      "description": "Aplicação Web (SPA) para busca e visualização de issues, forks e stars de qualquer repositório público do Github."
     }
   ]
 }
