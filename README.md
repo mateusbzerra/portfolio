@@ -1,6 +1,6 @@
 <h1 align="center">My Portfolio 💼</h1>
 
-<p align="center"> <img width="150" src="static/icon.png" /> </p>
+<p align="center"> <img width="150" src="static/icon2.png" /> </p>
 
 <p align="center">
   <a href="https://twitter.com/mateusbzerra" target="_blank">

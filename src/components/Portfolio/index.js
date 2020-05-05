@@ -42,7 +42,7 @@ export default function Portfolio() {
       </List>
       <SeeMore>
         <a target="__blank" href="https://github.com/mateusbzerra">
-          Veja mais no meu <FaGithub size={15} /> Github
+          Ver mais
         </a>
       </SeeMore>
     </Container>

@@ -28,9 +28,9 @@ export const List = styled.div`
     font-size: 18px;
     border-radius: 10px;
     padding: 5px;
+    transition: transform 0.5s;
     &:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
+      transform: translateY(-15px);
     }
     img {
       margin-bottom: 15px;

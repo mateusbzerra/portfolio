@@ -54,12 +54,14 @@ export const SeeMore = styled.div`
   align-items: center;
   justify-content: center;
   margin: 20px 0px 10px;
+
   svg {
     margin-left: 8px;
     margin-right: 2px;
     margin-bottom: 2px;
   }
   a {
+    transition: opacity 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,8 +73,8 @@ export const SeeMore = styled.div`
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
-  }
-  &:hover {
-    opacity: 0.5;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 `
