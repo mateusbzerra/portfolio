@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const Container = styled.header`
   background-image: url("/images/header-background.png");
@@ -10,7 +10,26 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
 `
-
+const appearFromLeft = keyframes`
+  from{
+    opacity:0;
+    transform: translateX(-50px)
+  }
+  to{
+    opacity:1;
+    transform: translateX(0);
+  }
+`
+const appearFromRight = keyframes`
+  from{
+    opacity:0;
+    transform: translateX(50px)
+  }
+  to{
+    opacity:1;
+    transform: translateX(0);
+  }
+`
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -25,7 +44,9 @@ export const Content = styled.div`
   @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
   }
+
   .left {
+    animation: ${appearFromLeft} 1s;
     @media only screen and (max-width: 900px) {
       text-align: center;
       padding-bottom: 10px;
@@ -52,7 +73,7 @@ export const Content = styled.div`
   }
   .right {
     display: flex;
-
+    animation: ${appearFromRight} 1s;
     img {
       margin: 0px auto;
       max-width: 100%;

@@ -29,8 +29,9 @@ export const CardContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  :hover {
-    transform: scale(1.05);
+  transition: transform 0.5s;
+  &:hover {
+    transform: translateX(10px);
   }
   img {
     max-width: 80px;
