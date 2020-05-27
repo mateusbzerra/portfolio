@@ -5,6 +5,7 @@ module.exports = {
     description: `Desenvolvimento de Sistemas, Websites e Aplicativos Android e iOS`,
     author: `@mateusbzerra`,
     siteUrl: "https://mateusbezerra.com",
+    icon: "https://mateusbezerra.com/icon2.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
