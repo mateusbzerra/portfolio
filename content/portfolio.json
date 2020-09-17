@@ -20,10 +20,11 @@
       "description": "Aplicativo de controle de fluxo de caixa de uma pequena empresa."
     },
     {
-      "title": "Github Explorer",
-      "url": "https://github.com/mateusbzerra/github-explorer",
-      "image": "",
-      "description": "Aplicação Web (SPA) para busca e visualização de issues, forks e stars de qualquer repositório público do Github."
+      "title": "CalendApp",
+      "url": "https://calendapplication.netlify.com",
+      "image": "https://github.com/mateusbzerra/calendApp/blob/master/public/logo512.png",
+      "description": "Aplicação Web (SPA) para controle de lembretes em um calendário mensal, com data, horário e informações climáticas do cidade."
     }
+    
   ]
 }
