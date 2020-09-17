@@ -22,7 +22,7 @@
     {
       "title": "CalendApp",
       "url": "https://calendapplication.netlify.com",
-      "image": "https://github.com/mateusbzerra/calendApp/blob/master/public/logo512.png",
+      "image": "https://raw.githubusercontent.com/mateusbzerra/calendApp/master/public/logo512.png",
       "description": "Aplicação Web (SPA) para controle de lembretes em um calendário mensal, com data, horário e informações climáticas do cidade."
     }
     
