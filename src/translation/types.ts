@@ -25,6 +25,7 @@ export default interface ITranslationType {
       url: string;
       tags: string[];
     }[];
+    seeMore: string;
   };
   contact: {
     title: string;

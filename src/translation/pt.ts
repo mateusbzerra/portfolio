@@ -78,7 +78,8 @@ const pt: ITranslationType = {
           'Aplicação Web (SPA) para controle de lembretes em um calendário mensal, com data, horário e informações climáticas do cidade.',
         tags: ['React', 'Typescript', 'Jest', 'Styled Components']
       }
-    ]
+    ],
+    seeMore: 'Ver mais'
   },
   contact: {
     title: 'Fale comigo'

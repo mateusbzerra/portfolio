@@ -46,7 +46,7 @@ export default function Portfolio() {
       </List>
       <SeeMore>
         <a target="__blank" href="https://github.com/mateusbzerra">
-          Ver mais
+          {t.seeMore}
         </a>
       </SeeMore>
     </Container>

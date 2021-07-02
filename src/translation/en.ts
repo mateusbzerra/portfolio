@@ -78,7 +78,8 @@ const en: ITranslationType = {
           'Web calendar application to manage reminders with location, weather, date and time',
         tags: ['React', 'Typescript', 'Jest', 'Styled Components']
       }
-    ]
+    ],
+    seeMore: 'See more'
   },
   contact: {
     title: 'Be in touch'
