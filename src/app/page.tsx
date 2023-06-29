@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GithubIcon, MailIcon, TwitterIcon } from "lucide-react";
+import { GithubIcon, MailIcon, LinkedinIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -34,10 +34,10 @@ export default function Home() {
             </a>
             <a
               target="_blank"
-              href="https://twitter.com/mateusbzerra"
+              href="https://linkedin.com/in/mateusbzerra"
               className="hover:text-gray-600 "
             >
-              <TwitterIcon size={36} />
+              <LinkedinIcon size={36} />
             </a>
           </div>
         </div>
