@@ -43,6 +43,16 @@ export const getTechStackList = ({ currentYear }: Props) => [
     yearsOfExperience: `${currentYear - 2020}y`,
   },
   {
+    name: "Cypress",
+    imageUrl: "/tech-icons/cypress-icon.svg",
+    yearsOfExperience: `${currentYear - 2020}y`,
+  },
+  {
+    name: "Jest",
+    imageUrl: "/tech-icons/jest-icon.svg",
+    yearsOfExperience: `${currentYear - 2020}y`,
+  },
+  {
     name: "Django Rest Framework",
     imageUrl: "/tech-icons/django-icon.svg",
     yearsOfExperience: "<1y",
