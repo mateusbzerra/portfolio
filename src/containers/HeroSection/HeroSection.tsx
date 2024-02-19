@@ -21,7 +21,7 @@ export const HeroSection = () => {
               I&apos;m <span className="text-cyan">Mateus Bezerra</span>
             </h2>
             <p className="text-xl max-w-md font-normal">
-              {`+${yearsOfExperience}`} years experienced{" "}
+              {yearsOfExperience}-year experienced{" "}
               <span className="text-cyan">Software Engineer</span> with working
               experience in <b>Front-end</b>, <b>Back-end</b> and <b>Mobile </b>
               development.
