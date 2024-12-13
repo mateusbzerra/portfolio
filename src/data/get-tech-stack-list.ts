@@ -60,6 +60,6 @@ export const getTechStackList = ({ currentYear }: Props) => [
   {
     name: "Tailwind CSS",
     imageUrl: "/tech-icons/tailwind-icon.svg",
-    yearsOfExperience: "<1y",
+    yearsOfExperience: `${currentYear - 2023}y`,
   },
 ];
